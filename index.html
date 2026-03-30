@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moja Strona</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="page-body">
 
-    <!-- ============================================================
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Moja Strona</title>
+     <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-body">
+
+     <!-- ============================================================
          AUTOR-WERYFIKACJA (Osoba 1)
          Zastąp TYLKO ten komentarz poniższym (wpisz swoje dane):
              Weryfikacja środowiska: OK — [Twoje Imię Nazwisko]
          ============================================================ -->
-     Weryfikacja środowiska: OK — Michał Dobosz
+     <!-- AUTOR-WERYFIKACJA -->
 
-    <!-- ============================================================
+     <!-- ============================================================
          HEADER (Osoba 2)
          Zastąp TYLKO ten komentarz tagiem <header>...</header>.
          Użyj klas: site-header, site-header__inner,
                     site-header__title, site-header__subtitle
          ============================================================ -->
     <!-- HEADER: Wstaw tutaj nagłówek strony -->
-
+     <header class="site-header">
+          <div class="site-header__inner">
+               <h1 class="site-header__title">Moja Strona</h1>
+               <p class="site-header__subtitle">Witaj na naszej stronie!</p>
+          </div>
+     </header>
     <!-- ============================================================
          NAV (Osoba 3)
          Zastąp TYLKO ten komentarz tagiem <nav>...</nav>.
@@ -30,42 +37,47 @@
                     site-nav__item, site-nav__link
          href linków: #, #about, #offer, #contact
          ============================================================ -->
-    <!-- NAV: Wstaw tutaj nawigację -->
+     <nav class="site-nav">
+          <ul class="site-nav__list">
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Strona główna</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#about">O nas</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#offer">Oferta</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#contact">Kontakt</a>
+               </li>
+          </ul>
+     </nav>
 
-    <!-- ============================================================
+     <!-- ============================================================
          MAIN — nie ruszaj tego tagu! Sekcje wewnątrz dodają osoby 4–6.
          ============================================================ -->
-    <main class="site-main">
+     <main class="site-main">
 
-      <!-- ==========================================================
+          <!-- ==========================================================
            SECTION-ABOUT (Osoba 4)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            Użyj klas: section section--about, section__inner,
                       section__title, section__text
            id sekcji: about
            ========================================================== -->
-      <!-- SECTION-ABOUT: Wstaw tutaj sekcję O nas -->
+          <!-- SECTION-ABOUT: Wstaw tutaj sekcję O nas -->
 
-      <!-- ==========================================================
+          <!-- ==========================================================
            SECTION-OFFER (Osoba 5)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            Użyj klas: section section--offer, section__inner,
                       section__title, offer-list, offer-list__item
            id sekcji: offer
            ========================================================== -->
-          <section class="section section--offer" id="offer">
-          <div class="section__inner">
-          <h2 class="section__title">Oferta</h2>
-          <ul class="offer-list">
-               <li class="offer-list__item">Tworzenie stron internetowych</li>
-               <li class="offer-list__item">Projektowanie graficzne</li>
-               <li class="offer-list__item">Optymalizacja SEO</li>
-               <li class="offer-list__item">Szkolenia z programowania</li>
-          </ul>
-          </div>
-          </section>
-          
-      <!-- ==========================================================
+          <!-- SECTION-OFFER: Wstaw tutaj sekcję Oferta -->
+
+          <!-- ==========================================================
            SECTION-CONTACT (Osoba 6)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            WAŻNE: formularz musi mieć id="contact-form"
@@ -76,42 +88,20 @@
                       contact-form__textarea, contact-form__btn
            id sekcji: contact
            ========================================================== -->
-      <section class="section section--contact" id="contact">
-  <div class="section__inner">
-    <h2 class="section__title">Kontakt</h2>
-    <form class="contact-form" id="contact-form" novalidate>
+          <!-- SECTION-CONTACT: Wstaw tutaj sekcję z formularzem -->
 
-      <div class="contact-form__field">
-        <label class="contact-form__label" for="name">Twoje imię</label>
-        <input class="contact-form__input" type="text" id="name" name="name" placeholder="np. Jan Kowalski">
-      </div>
+     </main>
+     <!-- /MAIN -->
 
-      <div class="contact-form__field">
-        <label class="contact-form__label" for="email">Twój e-mail</label>
-        <input class="contact-form__input" type="email" id="email" name="email" placeholder="np. jan@example.com">
-      </div>
-
-      <div class="contact-form__field">
-        <label class="contact-form__label" for="message">Wiadomość</label>
-        <textarea class="contact-form__textarea" id="message" name="message" rows="5" placeholder="Napisz do nas..."></textarea>
-      </div>
-
-      <button class="contact-form__btn" type="submit">Wyślij</button>
-    </form>
-  </div>
-</section>
-
-    </main>
-    <!-- /MAIN -->
-
-    <!-- ============================================================
+     <!-- ============================================================
          FOOTER (Osoba 7)
          Zastąp TYLKO ten komentarz tagiem <footer>...</footer>.
          Użyj klas: site-footer, site-footer__inner,
                     site-footer__copy, site-footer__nav, site-footer__link
          ============================================================ -->
-    <!-- FOOTER: Wstaw tutaj stopkę strony -->
+     <!-- FOOTER: Wstaw tutaj stopkę strony -->
 
-    <script src="script.js" defer></script>
-  </body>
+     <script src="script.js" defer></script>
+</body>
+
 </html>
