@@ -88,7 +88,30 @@
                       contact-form__textarea, contact-form__btn
            id sekcji: contact
            ========================================================== -->
-          <!-- SECTION-CONTACT: Wstaw tutaj sekcję z formularzem -->
+          <section class="section section--contact" id="contact">
+  <div class="section__inner">
+    <h2 class="section__title">Kontakt</h2>
+    <form class="contact-form" id="contact-form" novalidate>
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="name">Twoje imię</label>
+        <input class="contact-form__input" type="text" id="name" name="name" placeholder="np. Jan Kowalski">
+      </div>
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="email">Twój e-mail</label>
+        <input class="contact-form__input" type="email" id="email" name="email" placeholder="np. jan@example.com">
+      </div>
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="message">Wiadomość</label>
+        <textarea class="contact-form__textarea" id="message" name="message" rows="5" placeholder="Napisz do nas..."></textarea>
+      </div>
+
+      <button class="contact-form__btn" type="submit">Wyślij</button>
+    </form>
+  </div>
+</section>
 
      </main>
      <!-- /MAIN -->
