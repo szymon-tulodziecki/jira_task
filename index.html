@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moja Strona</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="page-body">
 
-    <!-- ============================================================
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Moja Strona</title>
+     <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-body">
+
+     <!-- ============================================================
          AUTOR-WERYFIKACJA (Osoba 1)
          Zastąp TYLKO ten komentarz poniższym (wpisz swoje dane):
              Weryfikacja środowiska: OK — [Twoje Imię Nazwisko]
          ============================================================ -->
-    <!-- AUTOR-WERYFIKACJA -->
+     <!-- AUTOR-WERYFIKACJA -->
 
-    <!-- ============================================================
+     <!-- ============================================================
          HEADER (Osoba 2)
          Zastąp TYLKO ten komentarz tagiem <header>...</header>.
          Użyj klas: site-header, site-header__inner,
@@ -35,32 +37,47 @@
                     site-nav__item, site-nav__link
          href linków: #, #about, #offer, #contact
          ============================================================ -->
-    <!-- NAV: Wstaw tutaj nawigację -->
+     <nav class="site-nav">
+          <ul class="site-nav__list">
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Strona główna</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#about">O nas</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#offer">Oferta</a>
+               </li>
+               <li class="site-nav__item">
+                    <a class="site-nav__link" href="#contact">Kontakt</a>
+               </li>
+          </ul>
+     </nav>
 
-    <!-- ============================================================
+     <!-- ============================================================
          MAIN — nie ruszaj tego tagu! Sekcje wewnątrz dodają osoby 4–6.
          ============================================================ -->
-    <main class="site-main">
+     <main class="site-main">
 
-      <!-- ==========================================================
+          <!-- ==========================================================
            SECTION-ABOUT (Osoba 4)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            Użyj klas: section section--about, section__inner,
                       section__title, section__text
            id sekcji: about
            ========================================================== -->
-      <!-- SECTION-ABOUT: Wstaw tutaj sekcję O nas -->
+          <!-- SECTION-ABOUT: Wstaw tutaj sekcję O nas -->
 
-      <!-- ==========================================================
+          <!-- ==========================================================
            SECTION-OFFER (Osoba 5)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            Użyj klas: section section--offer, section__inner,
                       section__title, offer-list, offer-list__item
            id sekcji: offer
            ========================================================== -->
-      <!-- SECTION-OFFER: Wstaw tutaj sekcję Oferta -->
+          <!-- SECTION-OFFER: Wstaw tutaj sekcję Oferta -->
 
-      <!-- ==========================================================
+          <!-- ==========================================================
            SECTION-CONTACT (Osoba 6)
            Zastąp TYLKO ten komentarz tagiem <section>...</section>.
            WAŻNE: formularz musi mieć id="contact-form"
@@ -71,19 +88,20 @@
                       contact-form__textarea, contact-form__btn
            id sekcji: contact
            ========================================================== -->
-      <!-- SECTION-CONTACT: Wstaw tutaj sekcję z formularzem -->
+          <!-- SECTION-CONTACT: Wstaw tutaj sekcję z formularzem -->
 
-    </main>
-    <!-- /MAIN -->
+     </main>
+     <!-- /MAIN -->
 
-    <!-- ============================================================
+     <!-- ============================================================
          FOOTER (Osoba 7)
          Zastąp TYLKO ten komentarz tagiem <footer>...</footer>.
          Użyj klas: site-footer, site-footer__inner,
                     site-footer__copy, site-footer__nav, site-footer__link
          ============================================================ -->
-    <!-- FOOTER: Wstaw tutaj stopkę strony -->
+     <!-- FOOTER: Wstaw tutaj stopkę strony -->
 
-    <script src="script.js" defer></script>
-  </body>
+     <script src="script.js" defer></script>
+</body>
+
 </html>
