@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
      Twój kod poniżej (zamień null na właściwe wywołanie):
   -------------------------------------------------------------- */
-  const form = null; // TODO: zamień null → document.getElementById('...')
+  const form = document.getElementById('contact-form');
 
   /* --------------------------------------------------------------
      TODO 2 — Pobierz pole imienia z formularza
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
      Twój kod poniżej (zamień null na właściwe wywołanie):
   -------------------------------------------------------------- */
-  const inputName = null; // TODO: zamień null → document.getElementById('...')
+  const inputName = document.getElementById('name');
 
   /* --------------------------------------------------------------
      TODO 3 — Reaguj na wysłanie formularza
@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
      Twój kod poniżej (zastąp ten komentarz gotowym wywołaniem):
   -------------------------------------------------------------- */
-  // TODO: dodaj tutaj form.addEventListener('submit', function(event) { ... })
-
+  form.addEventListener('submit', function(event) {
+   event.preventDefault();
+   alert('Dziękujemy, ' + inputName.value + '! Odezwiemy się wkrótce.');
+  });
 }); // koniec bloku DOMContentLoaded
